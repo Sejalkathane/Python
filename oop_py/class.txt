@@ -1,0 +1,42 @@
+# Class is a blueprint an how an object will behave
+
+# pyhton class are most common daa type in python , such as string , list, dictionaries ans so on
+
+# """" class as an object's blueprint or template.  """"
+
+# <<  Attributes are the names given to the variables that make up a class.  >>
+
+
+
+# A class instance with a defined set of properties is called an object.
+
+# class ==> 1.data or property 
+#           2. function or behavior
+
+
+# A class is a collection of objects. A class contains the blueprints or the prototype from which the objects are being created. It is a logical entity that contains some attributes and methods. 
+
+# /////////////////////////////////////////////////////////////////////////////////
+
+
+# Class name always in pascal case :: ExampleOfPascalCase
+# Classes are created by keyword class.
+# Attributes are the variables that belong to a class.
+
+
+
+# ::::: OBJECT ::::
+# The object is an entity that has a state and behavior associated with it. It may be any real-world object like a mouse, keyboard, chair, table, pen, etc. Integers, strings, floating-point numbers, even arrays, and dictionaries, are all objects.
+
+# EX: Sports---->Cricket   //  cricket=Sports()   
+
+
+# Method is a function writen inside class
+
+
+
+
+
+
+
+

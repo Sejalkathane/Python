@@ -1,0 +1,21 @@
+#The Name pandas has a raference to both "panel data", ans "pyhton data analysis" was created by
+
+# use for working data sets
+
+# Read and write data structure and diffrent format:csv,zip,json etc:
+
+# It has function for analyzing , cleaning, exploring,and manipulating data
+///////////////////
+
+Three Data Structure ::
+1.Series:- One Dimensional Labled arrays
+2.DataFrames:- Two Dimensional data structure with columns,much like a table
+3.Panel:- A panel is a 3D container of data
+
+
+
+
+
+
+
+
