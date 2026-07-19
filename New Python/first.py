@@ -35,6 +35,38 @@ else :
  
 
 
+# Many Values to Multiple Variables
+x,y,z = "apple" ,"banana" ,"orange" ;
+print(f"fruits are {x},{y} and {y}");
+
+# One Value to Multiple Variables
+x=y=z="apple";
+print(f"frits are {x},{y} and {z}");
+
+
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z)
+
+
+x = "Python "
+y = "is "
+z = "awesome"
+print(x + y + z)
+
+
+# TYPE CASTING
+name="Bro"
+age=33
+num=23.23
+print(bool(name));
+print(float(age));
+print(int(num));
+
+
+
+
 
 
 
