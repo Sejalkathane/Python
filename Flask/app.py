@@ -1,9 +1,15 @@
 from flask import Flask , render_template , url_for , request , redirect
-# Flask → Used to create the Flask application.
-# render_template → Used to display HTML files from the templates folder.
+# Flask -> Creates the Flask application.
+# render_template -> Displays HTML pages from the templates folder.
+# url_for -> Creates URLs automatically.
+# request -> Gets data sent by the user (forms).
+# redirect -> Redirects the user to another page.
 
-from flask_sqlalchemy import SQLAlchemy  
-from datetime import datetime
+
+from flask_sqlalchemy import SQLAlchemy  # SQLAlchemy -> Used to connect Flask with the database.
+
+from datetime import datetime # datetime -> Used to store the current date and time.
+
 
 
 app = Flask(__name__)
@@ -35,19 +41,27 @@ class Todo(db.Model):   # Create a table called Todo.
 
 @app.route('/', methods=['POST','GET']) 
 #  this is a decorator that tells Flask what URL should trigger our function
+# '/' means Home page.
+# GET -> Show the page.
+# POST -> Receive data from the form.
 def index():
+     # If the user submits the form
     if request.method == 'POST':
-        # pass
         # return "Hello, Hii There"
-        task_content=request.form['content']
+        task_content=request.form['content']  # Get the value entered in the input field named "content".
+
         new_task =Todo(content=task_content)
         
         try:
-            db.session.add(new_task)
-            db.session.commit()
-            return redirect('/')
+            db.session.add(new_task)     # Add the object to the database session.
+
+            db.session.commit()       # Save the changes permanently.
+
+            return redirect('/')        # Reload the home page.
+
         except:
-            return "There was an issue adding your task"
+            return "There was an issue adding your task"             # If an error occurs
+
 
     else:
             tasks=Todo.query.order_by(Todo.date_created).all()

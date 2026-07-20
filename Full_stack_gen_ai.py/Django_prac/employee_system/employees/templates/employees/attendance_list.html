@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance List</title>
+</head>
+<body>
+
+<h2>Attendance</h2>
+
+<a href="{% url 'attendance_create' %}">
+
+Mark Attendance
+
+</a>
+
+<br><br>
+
+<table border="1">
+
+<tr>
+
+<th>Employee</th>
+
+<th>Date</th>
+
+<th>Status</th>
+
+</tr>
+
+{% for record in attendance %}
+
+<tr>
+
+<td>{{ record.employee.name }}</td>
+
+<td>{{ record.date }}</td>
+
+<td>{{ record.status }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+</html>
